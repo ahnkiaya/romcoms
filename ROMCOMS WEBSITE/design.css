@@ -1,0 +1,349 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ff2454;
+    color: rgb(252, 249, 249);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f71349;
+}
+
+nav a {
+    color: rgb(252, 246, 246);
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hero {
+    font-family: 'Protest Riot';
+    text-align: center;
+    padding: 100px 20px;
+}
+
+button {
+    background-color: white;
+    color: #ff2454;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Protest Riot', sans-serif;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  gap: 20px;
+
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.hero-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-left img {
+  width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.hero-right img {
+  width: 150px;
+  height: auto;
+}
+
+.movies {
+  padding: 40px;
+}
+
+.movies h2 {
+  font-family: 'Protest Riot', sans-serif;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.movie-list {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.movie-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  width: 180px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Hidden by default */
+.movie-description {
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #ffe4ef;
+    color: #5c2940;
+    text-align: center;
+}
+
+/* Show when clicked */
+.movie-card.active .movie-description {
+    display: block;
+}
+
+.movie-card h3 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-style: italic;
+
+}
+
+.section-divider {
+  border: thick;
+  height: 2px;
+  background-color: rgb(255, 252, 253);
+  width: 100%;
+  margin: 40px auto;
+}
+
+.section-dividerv {
+  border: thick;
+  height: 2px;
+  background-color: rgb(255, 252, 253);
+  width: 100%;
+  margin: 40px auto;
+}
+
+.moods {
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: x-large;
+    text-align: center;
+    width: 600px;
+    height: 100px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #ff8ab5;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+
+    width: 90%;
+    max-width: 1000px;
+    margin: 10px auto;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    display: block;
+}
+
+.section-dividerx {
+  border: thick;
+  height: 2px;
+  background-color: rgb(255, 252, 253);
+  width: 100%;
+  margin: 40px auto;
+}
+
+
+.video-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+}
+
+.trailer {
+    font-family: 'Momo Trust Display', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.madebyalli {
+    font-family: 'Monomaniac One', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffe4ef;
+}
+
+button {
+    background-color: white;
+    color: #ff2454;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ffe4ef;
+    transform: scale(1.05);
+}
+
+/* Keep movie cards aligned */
+.movie-card {
+    width: 180px;
+    flex-shrink: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Smooth animation for poster only */
+.movie-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    display: block;
+
+    transition: transform 0.3s ease,
+                filter 0.3s ease;
+}
+
+/* Hover animation */
+.movie-card:hover img {
+    transform: scale(1.05);
+    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.25));
+}
+
+.movie-card:active img {
+    transform: scale(0.97);
+}
+
+.movie-popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.movie-popup.show {
+    display: flex;
+}
+
+.popup-content {
+    background: #ffe4ef;
+    color: #5c2940;
+    padding: 30px;
+    border-radius: 20px;
+
+    width: 100%;
+    max-width: 450px;
+
+    position: relative;
+    text-align: center;
+
+    animation: popupAnimation 0.3s ease;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    background: none;
+    color: #5c2940;
+    font-size: 30px;
+    padding: 0;
+}
+
+@keyframes popupAnimation {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
