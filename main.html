@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <title>Cinefind Rom-com!</title>
+
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<script>
+function openMovie(id) {
+    document.getElementById(id).classList.add("show");
+}
+
+function closeMovie(id) {
+    document.getElementById(id).classList.remove("show");
+}
+</script>
+
+<body>
+
+    <header>
+        <h2>Cinefind Rom-com!</h2>
+
+        <nav>
+            <a href="#moods">picks! ♡</a>
+            <a href="#home">home ♡ //</a>
+            <a href="#details">details ♡</a>
+        </nav>
+    </header>
+
+    <div class="hero-text" id="home">
+        <h1>Find your next favorite rom-com.</h1>
+        <p>Cute stories, unforgettable characters, <br>
+          and movies you'll want to watch again. ♡</p>
+        <button onclick="document.getElementById('favorites').scrollIntoView({behavior:'smooth'})">
+    🔍︎ Search for a movie...
+</button>
+       </div>
+       
+    <div class = "hero-left">
+        <img src="romcoms_cutout_v2 (1) 1.png" alt="Rom-com movie">
+    </div>
+    
+    <section class="movies" id="favorites">
+
+    <hr class="section-dividerv">
+
+  <h4>♡ Popular Rom-Coms</h2>
+
+  <div class="movie-list">
+
+    <div class="movie-card" onclick="openMovie('nottinghill')">
+    <img src="Group 4.png" alt="Notting Hill">
+    <h3>Notting Hill</h3>
+</div>
+
+    <div class="movie-card" onclick="openMovie('dressses')">
+    <img src="Group 5.png" alt="27 Dresses">
+    <h3>27 Dresses</h3>
+</div>
+
+    <div class="movie-card" onclick="openMovie('howtolose')">
+    <img src="Group 6.png" alt="howtolose">
+    <h3>How to Lose a Guy in 10 Days</h3>
+</div>
+
+    <div class="movie-card" onclick="openMovie('acinderella')">
+    <img src="Group 7.png" alt="A Cinderella Story">
+    <h3>A Cinderella Story</h3>
+</div>
+
+    <div class="movie-card" onclick="openMovie('ihate')">
+    <img src="Group 8.png" alt="ihate">
+    <h3>10 Things I Hate About You</h3>
+</div>
+
+    <div class="movie-card" onclick="openMovie('Flipped')">
+    <img src="Group 9.png" alt="Flipped">
+    <h3>Flipped</h3>
+</div>
+
+    <div class="movie-card" onclick="openMovie('ShestheMan')">
+    <img src="Group 11.png" alt="She's the Man">
+    <h3>She's the Man</h3>
+</div>
+
+    <div class="movie-card" onclick="openMovie('ThePrincessDiaries')">
+      <img src="Group 12.png" alt="The Princess Diaries">
+      <h3>The Princess Diaries</h3>
+    </div>
+
+    <div class="movie-card" onclick="openMovie('mammamia')">
+      <img src="Group 13.png" alt="Mamma Mia">
+      <h3>Mamma Mia!</h3>
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="moods" id="moods">
+        <h6>What are you in the mood for? <br>
+            (find ur rom-com match)</h6>
+    </div>
+
+    <div class="image-grid" id="favorites">
+  <img src="Frame 5.png" alt="Image 1">
+  <img src="Frame 4.png" alt="Image 2">
+  <img src="Frame 2.png" alt="Image 3">
+  <img src="Frame 3.png" alt="Image 4">
+</div>
+
+<hr class="section-dividerx">
+
+<div class = "trailer" id="details">
+    <p>Watch the Trailer Get a little taste before you decide what to watch. ♡</p>
+</div>
+
+<div class="video-container">
+    <iframe
+        src="https://www.youtube.com/embed/_pmFp2W65Fs?si=XwVZwnP-OKMvSG76"
+        title="goingg"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<div class="madebyalli">
+    <p>Today's Trailer Pick ♡ 13 Going on 30 Romance • Comedy <br>
+        • Teen ⭐ 7.3 / 10  ♡ Add to Favorites</p>
+</div>
+</section>
+
+<div class="movie-popup" id="nottinghill">
+
+    <div class="popup-content">
+
+        <button class="close-btn"
+            onclick="closeMovie('nottinghill')">
+            &times;
+        </button>
+
+        <h2>Notting Hill ♡</h2>
+
+        <p>
+            A charming bookstore owner falls in love
+            with a famous Hollywood actress.
+            A sweet romantic comedy about love,
+            fame, and unexpected connections.
+        </p>
+
+        <p><b>Genre:</b> Romance • Comedy</p>
+
+    </div>
+
+</div>
+
+<div class="movie-popup" id="dressses">
+
+    <div class="popup-content">
+
+        <button class="close-btn"
+            onclick="closeMovie('dressses')">
+            &times;
+        </button>
+
+        <h2>27 Dresses ♡</h2>
+
+        <p>
+           Jane Nichols is a kind-hearted woman who has been a bridesmaid 27 times 
+           but has never been the bride herself. When her younger sister becomes engaged 
+           to the man Jane secretly loves, she must confront her feelings 
+           while dealing with a charming journalist who wants to write a story about her 
+           endless bridesmaid experiences.
+        </p>
+
+        <p><b>Genre:</b> Romance • Comedy</p>
+
+    </div>
+
+</div>
+
+<div class="movie-popup" id="howtolose">
+
+    <div class="popup-content">
+
+        <button class="close-btn"
+            onclick="closeMovie('howtolose')">
+            &times;
+        </button>
+
+        <h2>How to Lose a Guy in 10 Days ♡</h2>
+
+        <p>
+            Andie Anderson, a magazine writer, takes on an assignment to make a man fall out of love
+            with her in just 10 days. Meanwhile, Benjamin Barry, an advertising executive, bets that he
+            can make any woman fall in love with him in the same amount of time. When they meet, both have
+            their own agendas, leading to hilarious misunderstandings, romantic moments, and unexpected feelings.
+        </p>
+
+        <p><b>Genre:</b> Romance • Comedy</p>
+
+    </div>
+
+</div>
+
+<div class="movie-popup" id="acinderella">
+
+    <div class="popup-content">
+
+        <button class="close-btn"
+            onclick="closeMovie('acinderella')">
+            &times;
+        </button>
+
+        <h2>A Cinderella Story ♡</h2>
+
+        <p>
+            Sam Montgomery, a hardworking high school student living under
+            the control of her cruel stepmother, dreams of escaping her difficult life.
+            When she meets her online crush at a school dance, she must discover his identity
+            while dealing with unexpected romance, high school drama, and the challenges of
+            finding her happily ever after.
+        </p>
+
+        <p><b>Genre:</b> Romance • Comedy</p>
+
+    </div>
+
+</div>
+
+<div class="movie-popup" id="ihate">
+
+    <div class="popup-content">
+
+        <button class="close-btn"
+            onclick="closeMovie('ihate')">
+            &times;
+        </button>
+
+        <h2>10 Things I Hate About You ♡</h2>
+
+        <p>
+           Cameron, a new student, falls for Bianca, but her strict father only 
+           allows her to date if her rebellious older sister, Kat, dates first. 
+           Cameron arranges for the mysterious Patrick to win Kat's heart, 
+           leading to unexpected romance, hilarious moments, and lessons about love and honesty.
+        </p>
+
+        <p><b>Genre:</b> Romance • Comedy</p>
+
+    </div>
+
+</div>
+
+<div class="movie-popup" id="Flipped">
+
+    <div class="popup-content">
+
+        <button class="close-btn"
+            onclick="closeMovie('Flipped')">
+            &times;
+        </button>
+
+        <h2>Flipped ♡</h2>
+
+        <p>
+            Juli Baker has been in love with her neighbor, 
+            Bryce Loski, since they first met as children. 
+            While Juli sees Bryce as someone special, he finds her 
+            annoying and tries to avoid her. As they grow older, 
+            their feelings begin to change, teaching them about love, friendship, 
+            and seeing people for who they truly are.
+        </p>
+
+        <p><b>Genre:</b> Romance • Comedy • Coming-of-Age • Teen</p>
+
+    </div>
+
+</div>
+
+<div class="movie-popup" id="ShestheMan">
+
+    <div class="popup-content">
+
+        <button class="close-btn"
+            onclick="closeMovie('ShestheMan')">
+            &times;
+        </button>
+
+        <h2>She's the Man ♡</h2>
+
+        <p>
+            When Viola's girls' soccer team is cut, she disguises herself 
+            as her twin brother and enrolls at his boarding school to prove 
+            herself on the boys' soccer team. But things get complicated when 
+            she falls for her roommate, leading to hilarious misunderstandings, 
+            unexpected romance, and a journey of self-discovery.
+        </p>
+
+        <p><b>Genre:</b> Romance • Comedy • Sports</p>
+
+    </div>
+
+</div>
+
+<div class="movie-popup" id="ThePrincessDiaries">
+
+    <div class="popup-content">
+
+        <button class="close-btn"
+            onclick="closeMovie('ThePrincessDiaries')">
+            &times;
+        </button>
+
+        <h2>The Princess Diaries ♡</h2>
+
+        <p>
+            Mia Thermopolis, an ordinary and shy teenager, discovers that 
+            she is the heir to the throne of a small European kingdom. With 
+            the help of her grandmother, she undergoes royal training while navigating 
+            high school drama, friendship, and unexpected romance as she learns what 
+            it means to be a princess.
+        </p>
+
+        <p><b>Genre:</b> Romance • Comedy • Teen Comedy • Family</p>
+
+    </div>
+
+</div>
+<div class="movie-popup" id="mammamia">
+
+    <div class="popup-content">
+
+        <button class="close-btn"
+            onclick="closeMovie('mammamia')">
+            &times;
+        </button>
+
+        <h2>Mamma Mia ♡</h2>
+
+        <p>
+            Sophie, a young woman preparing for her wedding on a beautiful Greek island,
+            secretly invites three men from her mother's past, hoping to discover which
+            one is her father. As old romances resurface and secrets unfold, the family 
+            finds themselves caught in a joyful adventure filled with love, laughter, and
+            unforgettable ABBA songs.
+        </p>
+
+        <p><b>Genre:</b> Romance • Comedy • Musical</p>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
